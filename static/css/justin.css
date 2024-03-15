@@ -1,0 +1,11 @@
+i.bi, h3 {
+    display: inline-block;
+    vertical-align: middle; /* Optional: Aligns the elements vertically */
+  }
+  
+  /* Add margin to create space between the icon and text */
+  i.bi {
+    margin-right: 3px; /* Adjust as needed */
+    font-size: 30px;
+    vertical-align: -3px;
+  }

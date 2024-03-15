@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/linearicons.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/linearicons.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    </head>
+    <body>	
+        <!-- start banner Area -->
+        <section class="banner-area relative">
+            <div class="overlay overlay-bg"></div>				
+            <div class="container">
+                <div class="row fullscreen align-items-center justify-content-between">
+                    <div class="col-lg-6 col-md-6 banner-left">
+                        <h6 class="text-white">Away from monotonous life</h6>
+                        <h1 class="text-white">Magical Travel</h1>
+                        <p class="text-white">
+                            If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 banner-right" >
+                        <div class="tab-content" id="myTabContent" >
+                          <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="flight-tab" >
+                            <form class="form-wrap" action="/submit" method="post">
+                                <h1 class="mb-5 mt-0" >Flight</h1>
+                                <input type="text" class="form-control" name="from" placeholder="from " onfocus="this.placeholder = ''" onblur="this.placeholder = 'From '">									
+                                <input type="text" class="form-control" name="to" placeholder="to " onfocus="this.placeholder = ''" onblur="this.placeholder = 'To '">
+                                <input type="date"  class="form-control" name="date" placeholder="date " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Date '">
+                                <input type="number" min="1" max="20" class="form-control" name="adult" placeholder="Adults " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adults '">
+                                <input type="number" min="0" max="20" class="form-control" name="child" placeholder="Child " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Child '">							
+                                <div class="d-flex justify-content-center ">
+                                    <input type="submit" name="submit" value="Search flights" class="primary-btn text-uppercase">
+                                </div>								
+                            </form>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>					
+        </section>
+        <!-- End banner Area -->
+
+        
+        <script src="{{ url_for('static', filename='js/vendor/jquery-2.2.4.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js') }}"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> <!-- Update the API key -->
+        <script src="{{ url_for('static', filename='js/jquery-ui.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/easing.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/hoverIntent.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/superfish.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/mail-script.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+        
+    </body>
+</html>
